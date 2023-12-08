@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="form.js"></script>
+  <title>Reserveren</title>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+        <div class="logo"><a href="index.html">Mokka Lounge</a></div>
+            <nav>    
+                <ul class="keuze">
+                    <li><a href="reserveren.html">Reserveren</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+</header>
+
+<div class="formulier">
+  <form action="validatie/met/java.php" id="reserveer">
+      <div>
+        <label for="naam">Naam</label>
+          <input type="text" id="naam">
+          <span class="error" id="naam_error"></span>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+          <input type="text" id="email">
+          <span class="error" id="email_error"></span>
+      </div>
+      <div>
+        <label for="datum">Datum</label>
+          <input type="text" id="datum">
+          <span class="error" id="datum_error"></span>
+        <label for="uur">Uur</label>
+          <input type="text" id="uur">
+          <span class="error" id="uur_error"></span>
+      </div>
+      <div>
+        <label for="gelegenheid">Gelegenheid</label>
+          <select name="gelegenheid" id="gelegenheid">
+            <span class="error" id="gelegenheid"></span>
+            <option value="geen" id="geen">geen</option>
+            <option value="verjaardag" id="verjaardag">Verjaardag</option>
+            <option value="babyshower" id="babyshower">Baby Shower</option>
+            <option value="bachelorette" id="bachelorette">Bachelorette</option>
+            <option value="schoolevenement" id="schoolevenement">Schoolevenement</option>
+          </select>
+        <label for="aantalpersonen">Aantal personen</label>
+          <select name="aantalpersonen" id="aantalpersonen">
+            <span class="error" id="aantalpersonen_error"></span>
+            <option value="1" id="1">1</option>
+            <option value="2" id="2">2</option>
+            <option value="3" id="3">3</option>
+            <option value="4" id="4">4</option>
+            <option value="5" id="5">5</option>
+            <option value="6" id="6">6</option>
+            <option value="7" id="7">7</option>
+            <option value="8" id="8">8</option>
+            <option value="9" id="9">9</option>
+            <option value="10" id="10">10</option>
+            <option value="11" id="11">11</option>
+            <option value="12" id="12">12</option>
+            <option value="13" id="13">13</option>
+            <option value="14" id="14">14</option>
+            <option value="15" id="15">15</option>
+
+          </select>
+      </div>
+      <div>
+        <label for="bericht">Bericht</label>
+        <textarea name="bericht" id="bericht" cols="30" rows="10">Zet uw bericht</textarea>
+      </div>
+      <div>
+        <input type="button" value="Verstuur" id="verstuur" onclick="verstuur()" />
+      </div>
+    </form>
+  
+    <footer>
+      <div class="containerfooter">
+          <div class="kolomfooter">
+              <img src="images/mokkalogo.png" alt="logo van Mokka Lounge">
+              <p><a href="gdpr.html">GDPR & Privacy regelementering</a></p>
+          </div>
+
+          <div class="kolomfooter">
+              <div class="contact">
+                  <h3>Contact</h3>
+                  <p>telnr. 011/19 00 57</p>
+              </div>
+              
+              <div class="contact">
+                  <h3>Sociale media</h3>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+              </div>
+          </div>
+          
+          <div class="kolomfooter">
+              <div class="uren">
+                  <h3>Openingsuren</h3>
+                  <p>ma <strong>Gesloten</strong></p>
+                  <p>di - do <strong>12:00–00:00</strong></p>
+                  <p>vr - za <strong>12:00–01:00</strong></p>
+                  <p>zo <strong>14:00–23:00</strong></p>
+              </div>
+          </div>
+      </div>
+    </footer>
+</body>
+</html>

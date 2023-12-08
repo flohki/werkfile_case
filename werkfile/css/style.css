@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Delius&family=Prompt:wght@100;400;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	gap: 20px;
+	padding: 20px 0;
+}
+
+/*header*/
+
+.navbar {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+nav {
+    text-align: right;
+    width: 1000px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #E1415E;
+    font-weight: 800;
+}
+
+.achtergrond {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    align-self: center;
+}
+
+/*reserveren*/
+
+.accordion {
+ background-color: #eee;
+ color: black;
+ cursor: pointer;
+ width: 100%;
+ border: none;
+ transition: 0.5s;
+}
+.accordion:hover{
+    background-color: #ccc;
+}
+.panel {
+    background-color: grey;
+    overflow: hidden;
+}
+/*home*/
+
+h1 {
+    color: black;
+}
+
+.tekst_over {
+    width: 600px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+blockquote {
+    quotes: initial;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+cite {
+    padding-top: 0px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.slides-wrapper img {
+    max-width: 55rem;
+}
+
+.col-4 {
+    background-color: white;
+    height: 100vh;
+}
+
+.slides-wrapper {
+	position: relative;
+	max-width: 55rem;
+	margin: auto;
+    padding-bottom: 50px;
+}
+
+.slides {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 5px;
+}
+
+.slides::-webkit-scrollbar {
+	display: none;
+}
+
+.slides img {
+
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slides-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slides-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slides-nav a:hover {
+	opacity: 1;
+}
+
+.logo {
+    color: #E1415E;
+}
+
+/*menu*/
+
+/*media*/
+
+.galerij {
+    flex-direction: row;
+}
+
+.galerij img {
+    margin: 8px;
+}
+
+/*contact*/
+
+.maps {
+    position: relative;
+}
+
+/*gdpr*/
+
+h6 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/*footer*/
+
+footer {
+    background-color: grey;
+}
+
+.containerfooter {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.kolomfooter{
+  width: 400px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
+.kolomfooter img {
+  width: 25%;
+  height: 25%;
+}
+
+.uren {
+  text-align: center;
+}
+
+.contact h3 {
+  font-weight: bold;
+}
