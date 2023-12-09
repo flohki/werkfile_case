@@ -18,7 +18,6 @@ function controleerVoorwaardenNaam(){
         document.getElementById("naam_error").innerHTML="";
     }
 }
-
 function controleerVoorwaardenEmail(){
   let regExp=/^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
   if(regExp.test(emailTxt) == false){
@@ -39,9 +38,22 @@ function controleerVoorwaardenDatum(){
     document.getElementById("datum_error").innerHTML="";
   }	
 };
-function controleerVoorwaardenGelegenheid(){
+
+function controleerVoorwaardenAantalPersonen(){
   if (selectElement.value === '') {
-    document.getElementById('gelegenheid_error').innerHTML= "Kies een gelegenheid";
+    document.getElementById('aantalpersonen_error').innerHTML= "Kies een gelegenheid";
+  allesCorrectIngevuld = false;
   }
+  else{
+    document.getElementById("email_error").innerHTML="";
+  }
+}
+
+function verstuur(){
+  naamTxt=document.getElementById("naam").value;
+  voornaamTxt=document.getElementById("voornaam").value;
+  voornaamTxt=document.getElementById("email").value;
+  voornaamTxt=document.getElementById("datum").value;
+  voornaamTxt=document.getElementById("aantalpersonen").value;
 }
 
