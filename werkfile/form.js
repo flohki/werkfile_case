@@ -1,5 +1,18 @@
 "use strict";
 
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('myHeader');
+  const scrollPos = window.scrollY;
+
+  if (scrollPos > 600) { // Change 100 to the scroll position when you want the change to occur
+      header.classList.add('solid');
+      header.classList.remove('transparent');
+  } else {
+      header.classList.remove('solid');
+      header.classList.add('transparent');
+  }
+});
+
 let naamTxt;
 let emailTxt;
 let datumTxt;
@@ -121,28 +134,28 @@ function verstuur() {
   }
   if (allesCorrectIngevuld) {
     document.write("Alles is correct ingevuld");
-    let link = "mailto:" + encodeURIComponent("flore-jan_smeets@hotmail.com")
-      + "?cc=" + encodeURIComponent("flore-jan_smeets@hotmail.com")
-      + "&subject=" + encodeURIComponent("Formulier validatie")
-      + "&body="
-      + "naam:"
-      + encodeURIComponent(naamTxt)
-      + encodeURIComponent("\r\n\n")
-      + "E-mail:"
-      + encodeURIComponent(emailTxt)
-      + encodeURIComponent("\r\n\n")
-      + "Datum:"
-      + encodeURIComponent(datumTxt)
-      + encodeURIComponent("\r\n\n")
-      + "Uur:"
-      + encodeURIComponent(uurTxt)
-      + "Gelegenheid:"
-      + encodeURIComponent(gelegenheidTxt)
-      + encodeURIComponent("\r\n\n")
-      + "Aantal personen:"
-      + encodeURIComponent(aantalpersonenTxt)
-      + encodeURIComponent("\r\n\n")
-    window.location.href = link;
+    // let link = "mailto:" + encodeURIComponent("flore-jan_smeets@hotmail.com")
+    //   + "?cc=" + encodeURIComponent("flore-jan_smeets@hotmail.com")
+    //   + "&subject=" + encodeURIComponent("Formulier validatie")
+    //   + "&body="
+    //   + "naam:"
+    //   + encodeURIComponent(naamTxt)
+    //   + encodeURIComponent("\r\n\n")
+    //   + "E-mail:"
+    //   + encodeURIComponent(emailTxt)
+    //   + encodeURIComponent("\r\n\n")
+    //   + "Datum:"
+    //   + encodeURIComponent(datumTxt)
+    //   + encodeURIComponent("\r\n\n")
+    //   + "Uur:"
+    //   + encodeURIComponent(uurTxt)
+    //   + "Gelegenheid:"
+    //   + encodeURIComponent(gelegenheidTxt)
+    //   + encodeURIComponent("\r\n\n")
+    //   + "Aantal personen:"
+    //   + encodeURIComponent(aantalpersonenTxt)
+    //   + encodeURIComponent("\r\n\n")
+    // window.location.href = link;
   };
 };
 

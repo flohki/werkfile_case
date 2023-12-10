@@ -17,6 +17,19 @@ gap: 20px;
 padding: 20px 0;
 }
 /* header */
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+.transparent{
+  background-color: #F2E0C9;
+}
+.solid{
+  background-color: #731212;
+}
 .navbar {
   width: 1200px;
   margin: auto;
@@ -55,6 +68,12 @@ a:hover {
   font-weight: 800;
 }
 
+.achtergrond {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-self: center;
+}
 /* accordeon */
 .menu{
   display: flex;

@@ -16,9 +16,24 @@ html {
 	gap: 20px;
 	padding: 20px 0;
 }
+.container:nth-child(2){
+    margin-top: 120px;
+}
 
 /*header*/
-
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 0.3s ease-in-out;
+}
+.transparent{
+    background-color: #F2E0C9;
+}
+.solid{
+    background-color: #731212;
+}
 .navbar {
     width: 1200px;
     margin: auto;
@@ -175,11 +190,15 @@ cite {
 
 .galerij {
     flex-direction: row;
+    
 }
 
 .galerij img {
     margin: 8px;
     border-radius: 25px;
+}
+.contentmedia{
+    
 }
 
 /*contact*/
