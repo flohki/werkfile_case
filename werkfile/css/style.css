@@ -65,6 +65,20 @@ a:hover {
 }
 
 /*reserveren*/
+.formulier{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+
+}
+.formulier input{
+    margin: 15px 0 15px 25px;
+}
+.formulier textarea{
+    margin-left: 15px;
+}
 
 /*home*/
 
@@ -156,59 +170,7 @@ cite {
 }
 
 /*menu*/
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.accordion{
-    margin: 60px auto;
-    width: 100%;
-   }
-   .accordion li{
-    list-style: none;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: antiquewhite;
-    box-shadow: 6px 6px 10px -1px;
-    align-items: center;
-   }
-   .accordion li label{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
-   }
-   label::before{
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    transition: 1.5s;
-   }
-   input[type="checkbox"]{
-    display: none;
-   }
-   .accordion .content{
-    color: grey;
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-   }
-   input[type="checkbox"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px 10px 20px;
-   }
-   input[type="checkbox"]:checked + label::before{
-    content: '-';
-    padding-left: 100px;
-    transition: 1.5s;
-   }
+
 /*media*/
 
 .galerij {
@@ -222,10 +184,21 @@ cite {
 
 /*contact*/
 
-.maps {
-    position: relative;
-}
 
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.contactform{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.contactform input{
+    margin: 15px 0 15px 25px;
+}
+.contactform textarea{
+    margin-left: 15px;
+}
 /*gdpr*/
 
 h6 {
