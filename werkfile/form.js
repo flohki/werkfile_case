@@ -55,5 +55,35 @@ function verstuur(){
   voornaamTxt=document.getElementById("email").value;
   voornaamTxt=document.getElementById("datum").value;
   voornaamTxt=document.getElementById("aantalpersonen").value;
+  allesCorrectIngevuld=true;
+
+  if(naamTxt.length==0){
+    document.getElementById("naam_error").innerHTML="vul in a.u.b.";
+    allesCorrectIngevuld = false;
+  }
+  else {
+    controleerVoorwaardenNaam()
+  }
+
+  if(naamTxt.length==0){
+    document.getElementById("email_error").innerHTML="vul in a.u.b.";
+    allesCorrectIngevuld = false;
+  }
+  else {
+    controleerVoorwaardenEmail()
+  }
+
+  if(datumTxt.length==0){
+    document.getElementById("datum_error").innerHTML="Vul in a.u.b.";
+    allesCorrectIngevuld = false;
+  }
+
+  if(gelgenheidTxt)
+
+  if(allesCorrectIngevuld){
+    document.write("Correct ingevuld");
+  }
+
+
 }
 
