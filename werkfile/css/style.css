@@ -302,9 +302,9 @@ cite {
 
 /*media*/
 
-.galerij {
+/* .galerij {
     flex-direction: row;    
-}
+} */
 
 .galerij img {
     margin: 8px;
