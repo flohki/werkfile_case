@@ -134,28 +134,28 @@ function verstuur() {
   }
   if (allesCorrectIngevuld) {
     document.write("Alles is correct ingevuld");
-    // let link = "mailto:" + encodeURIComponent("flore-jan_smeets@hotmail.com")
-    //   + "?cc=" + encodeURIComponent("flore-jan_smeets@hotmail.com")
-    //   + "&subject=" + encodeURIComponent("Formulier validatie")
-    //   + "&body="
-    //   + "naam:"
-    //   + encodeURIComponent(naamTxt)
-    //   + encodeURIComponent("\r\n\n")
-    //   + "E-mail:"
-    //   + encodeURIComponent(emailTxt)
-    //   + encodeURIComponent("\r\n\n")
-    //   + "Datum:"
-    //   + encodeURIComponent(datumTxt)
-    //   + encodeURIComponent("\r\n\n")
-    //   + "Uur:"
-    //   + encodeURIComponent(uurTxt)
-    //   + "Gelegenheid:"
-    //   + encodeURIComponent(gelegenheidTxt)
-    //   + encodeURIComponent("\r\n\n")
-    //   + "Aantal personen:"
-    //   + encodeURIComponent(aantalpersonenTxt)
-    //   + encodeURIComponent("\r\n\n")
-    // window.location.href = link;
+    let link = "mailto:" + encodeURIComponent("flore-jan_smeets@hotmail.com")
+      + "?cc=" + encodeURIComponent("flore-jan_smeets@hotmail.com")
+      + "&subject=" + encodeURIComponent("Formulier validatie")
+      + "&body="
+      + "naam:"
+      + encodeURIComponent(naamTxt)
+      + encodeURIComponent("\r\n\n")
+      + "E-mail:"
+      + encodeURIComponent(emailTxt)
+      + encodeURIComponent("\r\n\n")
+      + "Datum:"
+      + encodeURIComponent(datumTxt)
+      + encodeURIComponent("\r\n\n")
+      + "Uur:"
+      + encodeURIComponent(uurTxt)
+      + "Gelegenheid:"
+      + encodeURIComponent(gelegenheidTxt)
+      + encodeURIComponent("\r\n\n")
+      + "Aantal personen:"
+      + encodeURIComponent(aantalpersonenTxt)
+      + encodeURIComponent("\r\n\n")
+    window.location.href = link;
   };
 };
 
