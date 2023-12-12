@@ -4,11 +4,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
 .container {
 width: 1200px;
 margin: auto;
@@ -94,9 +89,6 @@ a:hover {
 }
 /* accordeon */
 .menu{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 150px;
 }
 .accordion{
@@ -111,10 +103,9 @@ a:hover {
   background-color: #F2E0C9;
   color: #261414;
   box-shadow: 6px 6px 10px -1px;
-  align-items: center;
+ 
  }
  .accordion li label{
-
   display: flex;
   align-items: center;
   padding: 10px;
@@ -146,7 +137,6 @@ a:hover {
  input[type="checkbox"]:checked + label::before{
   content: '-';
   padding-left: 100px;
-  transition: 1.5s;
  }
  /* footer */
 footer {

@@ -5,10 +5,6 @@ body {
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .container {
 	width: 1200px;
 	margin: auto;
@@ -302,9 +298,6 @@ cite {
 
 /*media*/
 
-/* .galerij {
-    flex-direction: row;    
-} */
 
 .galerij img {
     margin: 8px;
