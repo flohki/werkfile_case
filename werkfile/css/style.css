@@ -22,14 +22,18 @@ header{
     width: 100%;
     top: 0;
     z-index: 9999;
-    transition: 0.3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .transparent{
-    background-color: #F2E0C9;
+    background-color: transparent;
+}
+.transparent a::before{
+    transition: 1.5s;
 }
 .solid{
-    background-color: #731212;
+    background-color: red;
 }
+
 .navbar {
     width: 1200px;
     margin: auto;
@@ -92,7 +96,12 @@ a:hover {
 }
 
 /*home*/
-
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+}
 h1 {
     color: black;
 }

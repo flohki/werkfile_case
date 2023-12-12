@@ -1,17 +1,37 @@
 "use strict";
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('myHeader');
+    const scrollPos = window.scrollY;
 
-window.addEventListener('scroll', function() {
-  const header = document.getElementById('myHeader');
-  const scrollPos = window.scrollY;
-
-  if (scrollPos > 600) { // Change 100 to the scroll position when you want the change to occur
-      header.classList.add('solid');
-      header.classList.remove('transparent');
-  } else {
-      header.classList.remove('solid');
-      header.classList.add('transparent');
-  }
+    if (scrollPos > 600) { // Change 100 to the scroll position when you want the change to occur
+        header.classList.add('solid');
+        header.classList.remove('transparent');
+    } else {
+        header.classList.remove('solid');
+        header.classList.add('transparent');
+    }
+  });
 });
+
+src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+(function($) {window.fnames = new Array(); 
+  window.ftypes = new Array();
+  fnames[0]='EMAIL';
+  ftypes[0]='email';
+  fnames[1]='FNAME';
+  ftypes[1]='text';
+  fnames[2]='LNAME';
+  ftypes[2]='text';
+  fnames[3]='ADDRESS';
+  ftypes[3]='address';
+  fnames[4]='PHONE';
+  ftypes[4]='phone';
+  fnames[5]='BIRTHDAY';
+  ftypes[5]='birthday';
+}
+  (jQuery));
+  var $mcj = jQuery.noConflict(true);
 
 let naamTxt;
 let emailTxt;
