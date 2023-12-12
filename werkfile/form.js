@@ -29,8 +29,8 @@ src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
   ftypes[4]='phone';
   fnames[5]='BIRTHDAY';
   ftypes[5]='birthday';
-}
-  (jQuery));
+})
+  (jQuery);
   var $mcj = jQuery.noConflict(true);
 
 // let naamTxt;
@@ -327,5 +327,5 @@ if(allesCorrectIngevuld) {
   + "personen"
   + encodeURIComponent(gelegenheidTxt)
   + encodeURIComponent("\r\n\n")
-  /* window.location.href = link;*/
+  window.location.href = link;
 }

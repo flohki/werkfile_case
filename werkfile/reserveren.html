@@ -47,16 +47,15 @@
     <div>
       <label for="gelegenheid">Gelegenheid</label>
       <select name="gelegenheid" id="gelegenheid">
-        <span class="error" id="gelegenheid"></span>
         <option value="geen" id="geen">geen</option>
         <option value="verjaardag" id="verjaardag">Verjaardag</option>
         <option value="babyshower" id="babyshower">Baby Shower</option>
         <option value="bachelorette" id="bachelorette">Bachelorette</option>
         <option value="schoolevenement" id="schoolevenement">Schoolevenement</option>
       </select>
+      <span class="error" id="gelegenheid_error"></span>
       <label for="aantalpersonen">Aantal personen</label>
       <select name="aantalpersonen" id="aantalpersonen">
-        <span class="error" id="aantalpersonen_error"></span>
         <option value="1" id="1">1</option>
         <option value="2" id="2">2</option>
         <option value="3" id="3">3</option>
@@ -73,13 +72,14 @@
         <option value="14" id="14">14</option>
         <option value="15" id="15">15</option>
       </select>
+      <span class="error" id="aantalpersonen_error"></span>
     </div>
     <div>
       <label for="bericht">Bericht</label>
       <textarea name="bericht" id="bericht" cols="30" rows="10">Zet uw bericht</textarea>
     </div>
     <div>
-      <button  value="verstuur" id="verstuur" onclick="verstuur()">Verzenden</button>
+      <button type="submit">Verstuur</button>
     </div>
   </form>
 </div>
